@@ -107,7 +107,8 @@ namespace LibreriaClaseProducto
             string cadena; 
 
             cadena = $"{TipoCorte} de {Nombre} en {UnidadVenta}\t  {PrecioBase}\t\t{PrecioIva}\n\n";
-            cadena += $"Cantidad: {Cantidad} \t PrecioTotal: {PrecioKilo} \t Precio Total+IVA:{PrecioTotalIva} ";
+            cadena += $"Cantidad: {Cantidad} \t PrecioTotal: {PrecioKilo} \t Precio Total+IVA:{PrecioTotalIva}\n\n\n ";
+
             return cadena;
         }
 

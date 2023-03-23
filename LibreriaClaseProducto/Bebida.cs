@@ -30,7 +30,9 @@ namespace LibreriaClaseProducto
     public class Bebida : Producto
     {
         //CONSTANTES
-        const float IVA = 0.21f; 
+        const float IVA = 0.21f;
+
+       
         //MIEMBROS
 
         private string _denominacion;
@@ -68,6 +70,7 @@ namespace LibreriaClaseProducto
             }
             set 
             {
+                
 
                 ChequearCadena(value);
 
@@ -76,6 +79,8 @@ namespace LibreriaClaseProducto
                 _denominacion = value; 
             }
         }
+
+        
 
         public TipoDeVenta Formatoventa
         {
@@ -106,6 +111,17 @@ namespace LibreriaClaseProducto
 
         #endregion
 
+        public override string ToString()
+        {
+            string cadena;
 
+            cadena = base.ToString();
+            cadena += $"Cantidad: {Cantidad} \t Denominacion: {Denominacion} \t FormatoVenta: {Formatoventa}";
+            
+
+            return cadena; 
+        }
+
+        
     }
 }

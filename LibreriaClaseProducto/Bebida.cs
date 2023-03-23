@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace LibreriaClaseProducto
 {
 
@@ -12,10 +14,10 @@ namespace LibreriaClaseProducto
     {
         public DenominacionNoEstablecidaException() : base("Denominacion No establecida")
         {
-            
+
         }
 
-        public DenominacionNoEstablecidaException(string msj): base(msj)
+        public DenominacionNoEstablecidaException(string msj) : base(msj)
         {
 
         }
@@ -24,7 +26,8 @@ namespace LibreriaClaseProducto
 
     public enum TipoDeVenta : byte { Botella, Caja3, Caja6, Caja12 }
 
-    internal class Bebida : Producto
+
+    public class Bebida : Producto
     {
         //CONSTANTES
         const float IVA = 0.21f; 
